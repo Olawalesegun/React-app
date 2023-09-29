@@ -1,14 +1,10 @@
-import { MiniCardContain, 
-RightMiniCardItem,
-LeftMiniCardItem } from "../styles/MiniCardStyles";
+import { MiniCardContain, RightMiniCardItem,LeftMiniCardItem } from "../styles/MiniCardStyles";
 
 function MiniCard(props){
     return (
-        <MiniCardContain>
+        <MiniCardContain large={peops.large}>
             <LeftMiniCardItem src={props.image} alt="alt"/>
-            <RightMiniCardItem>
-                {props.texts}
-            </RightMiniCardItem>
+            <RightMiniCardItem large={props.large}>{props.text}</RightMiniCardItem>
         </MiniCardContain>
     )
 }
